@@ -1,40 +1,19 @@
 #include <stdio.c>
 
-// int main(void)
-// {
-//     // printf("meow\n");
-//     // printf("meow\n");
-//     // printf("meow\n");
-
-//     int counter = 1;
-//     while (counter < 3)
-//     {   
-//         printf("meow\n");
-//         counter++;
-//     }
-// }
-
-void meow(void) // return type needs to be specified
-{
-    printf("meow\n");
-}
+void meow(int n); // return type needs to be specified
 
 int main(void)
 {
-    // While Loop
-    int i = 0;
-    while (i <= 3)
-    {   
-        printf("meow\n");
-        i++;
-    }
-
-    // For Loop (does exactely the same as the while loop with counter)
-    for (int i = 0; i < 3; i++)
-    {
-      // printf("meow\n");
-      meow();
-    }
-    
+    meow(3);
 }
 
+// if we want to have the functions at the bottom we would still have to declare them before the main function but could put the whole thing here
+
+void meow(int n)
+{
+   // For Loop (does exactely the same as the while loop with preceeding counter)
+  for (int i = 0; i < n; i++)
+    {
+      printf("meow\n");
+    }  
+}
